@@ -1,1 +1,11 @@
-dd
+CREATE TABLE Sales_Order(
+S_order_No VARCHAR (6) CHECK (S_order_No LIKE 'o%')  PRIMARY KEY,
+S_order_Date DATE ,
+Client _No VARCHAR (6) FOREIGN KEY,
+Delay_add VARCHAR (25),
+Salesman_No VARCHAR (6) FOREIGN KEY,
+Dely _type CHAR(1)  CHECK (Dely _type IN ('p', 'f'))  DEFAULT 'F' ,
+Billed_yn CHAR (1),
+Dely_Date DATE CHECK (Dely_Date > S_order_Date ),
+Order_Status VARCHAR (10) CHECK (Order_Status IN ('inprocess', 'fulfilled', 'backorder', 'canceled'))
+)
