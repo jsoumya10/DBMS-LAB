@@ -1,0 +1,6 @@
+insert into student values('Pankaj ','Tiwari');
+insert into student values('Ashok ','Sharma');
+insert into student values('Arun ','Gupta');
+select *  from student;
+//Select concat(firstname , lastname) as name from student;
+select firstname || ' ' || lastname from student;
