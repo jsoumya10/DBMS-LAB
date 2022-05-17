@@ -1,0 +1,10 @@
+create table STUDENT2(
+sname varchar(30),
+marks number(4)
+);
+ insert into STUDENT2 values ('RAJ','65'); 
+ insert into STUDENT2 values ('AMIT','32'); 
+ insert into STUDENT2 values ('SANJAY','45'); 
+ insert into STUDENT2 values ('ROHIT','40'); 
+ insert into STUDENT2 values ('ANIL','35'); 
+ SELECT * FROM STUDENT2;
