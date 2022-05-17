@@ -1,0 +1,13 @@
+CREATE TABLE Sales_Master(
+Salesman_No VARCHAR (6) CHECK (Salesman_NO LIKE 's%')  PRIMARY KEY,
+Sal_name VARCHAR (20) NOT NULL,
+Adress VARCHAR (40) NOT NULL,
+City VARCHAR (20),
+State VARCHAR (20),
+Pincode NUMBER (6),
+Sal_Amount NUMBER (8,2) NOT NULL CHECK (Sal_Amount > 0),
+Tgt_to_get NUMBER (8,2) NOT NULL CHECK (Tgt_to_get > 0),
+Ytd_Sales NUMBER (8,2) NOT NULL CHECK (Ytd_Sales > 0),
+Remarks VARCHAR (30)
+)
+select * from Sales_Master;
