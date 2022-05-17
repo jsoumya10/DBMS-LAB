@@ -1,0 +1,7 @@
+CREATE TABLE Sales_Order_Details(
+S_Order_No VARCHAR(6) PRIMARY KEY,
+Product_No VARCHAR2 (6) ,
+Qty_order NUMBER(8),
+Qty_disp NUMBER (8),
+Product_rate NUMBER (10,2)
+)
