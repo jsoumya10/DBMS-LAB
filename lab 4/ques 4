@@ -2,4 +2,6 @@ alter table student add MIDDLENAME varchar(20);
 insert into student values('Pankaj ','Tiwari','KUMAR');
 insert into student values('Ashok ','Sharma','KUMAR');
 insert into student values('Arun ','Gupta','KUMAR');
+
+//Select concat(firstname ,middlename, lastname) as name from student;
 select firstname || ' ' || middlename ||' '||lastname from student;
