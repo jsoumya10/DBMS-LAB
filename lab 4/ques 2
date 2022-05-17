@@ -1,0 +1,1 @@
+select  empcode , replace(replace(replace(replace(empname,'0',''), '1',''),'2',''), '3', '')  empname from emp;
