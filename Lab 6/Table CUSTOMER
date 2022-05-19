@@ -1,0 +1,16 @@
+create TABLE CUSTOMER(
+customer_id number(10),
+cust_name varchar(30),
+city varchar(30),
+grade number(5),
+salesman_id number(10)
+);
+insert into CUSTOMER values(3002,'Nick Rimando','New York',100,5001);
+insert into CUSTOMER values(3002,'Brad Davis','New York',200,5001);
+insert into CUSTOMER values(3002,'Graham Zusi','California',200,5002);
+insert into CUSTOMER values(3002,'Julian Green','London',300,5002);
+insert into CUSTOMER values(3002,'Fabian Johnson','Paris',300,5006);
+insert into CUSTOMER values(3002,'Geoff Cameron','Berlin',100,5003);
+insert into CUSTOMER values(3002,'Jozy Altidor','Moscow',200,5007);
+insert into CUSTOMER values(3002,'Brad Guzan','London',100,5005);
+select * from CUSTOMER;
