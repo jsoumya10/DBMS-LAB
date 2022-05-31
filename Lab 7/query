@@ -1,0 +1,1 @@
+ insert into EMPLOYEE3 values('E001','SOUMYA',to_date('10-10-1998','dd-mm-yyyyy'),to_date('05-10-2020','dd-mm-yyyyy'),20000)
