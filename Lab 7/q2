@@ -1,0 +1,1 @@
+select EMPID,EMPNAME,SALARY,to_char (DOJ,'month-dd-yyyy') from  EMPLOYEE3
