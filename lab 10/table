@@ -1,0 +1,17 @@
+create table emp(
+EmpId	Number(5),
+Name	Varchar2(40),
+DOJ	Date,
+JobId	Varchar2(50),
+Salary	Number(10)
+);
+drop table emp;
+insert into emp values(100,'Aman Jian',to_date('17-June-2017','DD-MONTH-YYYY'),'AD_PRES',24000.00);
+insert into emp values(101,'Yash Kumar',to_date('15-July-2019','DD-MONTH-YYYY'),'AD_VP',17000.00);
+insert into emp values(102,'Ayushi',to_date('12-Aug-2017','DD-MONTH-YYYY'),'IT_PROG',9000.00);
+insert into emp values(103,'Kamal',to_date('15-September-2016','DD-MONTH-YYYY'),'IT_PROG',6000.00);
+insert into emp values(105,'Madhav Mohan',to_date('14-July-2018','DD-MONTH-YYYY'),'IT_PROG',4000.00);
+insert into emp values(106,'Astha Sharma',to_date('27-June-2017','DD-MONTH-YYYY'),'PU_CLERK',2500.00);
+select * from emp;
+
+
