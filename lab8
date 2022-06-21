@@ -1,0 +1,16 @@
+CREATE TABLE EMPLOYEE3(
+EMPID VARCHAR(23) PRIMARY KEY CHECK(EMPID LIKE 'E%'),
+EMPNAME VARCHAR(25) NOT NULL,
+DOB DATE NOT NULL,
+DOJ DATE  NOT NULL,
+SALARY NUMBER(7,0) CHECK(SALARY>0),
+CONSTRAINT CK CHECK (DOB<DOJ)
+);
+select * from EMPLOYEE3;
+
+
+insert into  EMPLOYEE3 values('E01','SOUMYA',to_date('10-10-1998','dd-mm-yyyy'),to_date('12-01-2022','dd-mm-yyyy'),70000);
+insert into  EMPLOYEE3 values('E02','SHJAGUN',to_date('09-07-2000','dd-mm-yyyy'),to_date('11-11-2021','dd-mm-yyyy'),50000);
+insert into  EMPLOYEE3 values('E03','MUNISH',to_date('22-06-2001','dd-mm-yyyy'),to_date('12-10-2021','dd-mm-yyyy'),80000);
+insert into  EMPLOYEE3 values('E04','BUNTY',to_date('15-09-2001','dd-mm-yyyy'),to_date('12-10-2021','dd-mm-yyyy'),60000);
+insert into  EMPLOYEE3 values('E05','KARAN',to_date('18-09-1998','dd-mm-yyyy'),to_date('12-01-2022','dd-mm-yyyy'),70000);
