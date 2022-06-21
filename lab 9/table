@@ -1,0 +1,8 @@
+create table orderss(
+orderno number(7,0),
+purchaseAmt number(8,2),
+Ord_date Date,
+custID number(9,1),
+Salesman_ID number(8,1)
+);
+
